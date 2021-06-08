@@ -26,4 +26,11 @@ public class Flink12_Transform_Union {
         }).print();
         env.execute();
     }
+    /**
+     *
+     *
+     * connect与 union 区别：
+     * 1.	union之前两个流的类型必须是一样，connect可以不一样
+     * 2.	connect只能操作两个流，union可以操作多个。
+     */
 }
